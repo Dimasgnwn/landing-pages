@@ -1,0 +1,189 @@
+*,
+html {
+    font-family: "Roboto Mono", monospace;
+    font-style: normal;
+    padding: 0;
+    margin: 0;
+    scroll-behavior: smooth;
+}
+
+header {
+    position: absolute;
+    width: 100%;
+    background: transparent;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+}
+
+li {
+    margin: 10px;
+}
+
+li>a {
+    color: white;
+    font-size: 1rem;
+    font-weight: 300;
+    text-decoration: none;
+    text-transform: uppercase;
+
+}
+
+li>a:hover {
+    color: goldenrod;
+    transition-duration: .6s;
+
+}
+
+.bg-home {
+    /* width: 100%; */
+    height: 100vh;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('https://www.village-bali.com/wp-content/uploads/2024/03/village-drone.jpeg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.home {
+    text-align: center;
+}
+
+.title {
+    width: 100%;
+    margin: 30px 0;
+    font-family: "New Amsterdam", sans-serif;
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: 1.5rem;
+    text-align: center;
+    display: inline-block;
+}
+
+.garis {
+    border: solid 1px;
+    color: white;
+    width: 100%;
+    height: 100%;
+}
+
+.paraghraf {
+    margin: 40px 0px;
+    text-align: center;
+    font-size: 1.2rem;
+    font-style: italic;
+
+}
+
+.btn {
+    padding: 20px 40px;
+    text-align: center;
+    border: solid 1px;
+    display: inline-block;
+    cursor: pointer;
+    background-color: #695228;
+
+}
+
+.btn>a {
+    color: white;
+    text-decoration: none;
+    text-transform: uppercase;
+
+}
+
+.btn:hover {
+    text-decoration: underline;
+
+}
+
+.container {
+    height: 100vh;
+    display: grid;
+    grid: auto-flow / 1fr 1fr;
+    text-align: center;
+}
+
+.content {
+    margin: 100px;
+    padding: 50px;
+    /* background-color: red; */
+    display: grid;
+}
+
+.title-2 {
+    font-size: 2.5rem;
+    font-weight: 400;
+    text-align: left;
+}
+
+#p-2 {
+    text-align: justify;
+    font-size: 1rem;
+
+}
+
+.image {
+    display: block;
+}
+
+#img-1 {
+    /* max-width: 100%; */
+    width: 350px;
+}
+
+#img-2 {
+    width: 45rem;
+    padding: 70px 80px 70px 0;
+}
+
+.container-2 {
+    height: 100vh;
+    background-color: rgba(194, 188, 183, 0.874);
+}
+.content-2 {
+    margin:10px 100px 0 100px;
+    max-width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    /* background-color: red; */
+}
+.card {
+    /* background-color: yellow; */
+    width: 400px;
+    height: 450px;
+    padding-top:20px;
+    display:grid;
+    gap: 1px;
+    text-align: center;
+    cursor: pointer;
+}
+.card:hover {
+    background-color: white;
+    transition-duration: 1s;
+    transform: scale(1.02);
+}
+.link-2 {
+    padding: 15px;
+    color:rgb(225, 169, 25);
+    font-size: 1.4rem;
+}
+.link-2:hover {
+    text-decoration: underline;
+}
+.description {
+    font-size: .9rem;
+    padding: 20px;
+}
