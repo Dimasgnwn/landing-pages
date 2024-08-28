@@ -153,37 +153,170 @@ li>a:hover {
     height: 100vh;
     background-color: rgba(194, 188, 183, 0.874);
 }
+
 .content-2 {
-    margin:10px 100px 0 100px;
+    margin: 10px 100px 0 100px;
     max-width: 100%;
     display: flex;
     justify-content: space-evenly;
     /* background-color: red; */
 }
+
 .card {
     /* background-color: yellow; */
     width: 400px;
     height: 450px;
-    padding-top:20px;
-    display:grid;
+    padding-top: 20px;
+    display: grid;
     gap: 1px;
     text-align: center;
     cursor: pointer;
 }
+
 .card:hover {
     background-color: white;
     transition-duration: 1s;
     transform: scale(1.02);
 }
+
 .link-2 {
-    padding: 15px;
-    color:rgb(225, 169, 25);
+    padding: 0 15px;
+    color: rgb(225, 169, 25);
     font-size: 1.4rem;
 }
+
 .link-2:hover {
     text-decoration: underline;
 }
+
 .description {
     font-size: .9rem;
+    padding: 0 20px;
+}
+
+.booking-form {
+    padding: 10px 20px;
+    margin: 10px 20px;
+    text-align: center;
+    /* background-color: red; */
+    display: flex;
+    justify-content: center;
+    
+}
+
+.form-container {
+    width: 80%;
     padding: 20px;
+    margin: 20px 20px;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    align-items: center;
+    border: 1px solid;
+    box-shadow: 10px -10px 10px black;
+    
+}
+.form-container:hover {
+    transition-duration: 1s;
+    transform: scale(1.04,1.04);
+}
+
+.booking-form label {
+    margin-right: 10px;
+    font-size: 14px;
+}
+
+.booking-form input {
+    padding: 10px;
+    width: 200px;
+    border: 1px solid #ccc;
+    /* border-radius: 5px; */
+    font-size: 14px;
+}
+
+.booking-form button {
+    background-color: #695228;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    font-size: 14px;
+    margin: 10px;
+    transition: .5s;
+}
+
+.booking-form button:hover {
+    background-color: #8e7c56;
+}
+.footer {
+    height: 400px;
+    display: flex;
+    justify-content: space-between;
+    background-color: #433c2e;
+}
+.footer-txt {
+    width: 30%;
+    margin: 20px;
+    padding: 30px;
+    color: rgb(212, 211, 211);
+    font-family: normal;
+    text-align:justify;
+}
+.footer-txt h2 {
+    padding: 10px;
+    margin: 10px 0;
+    font-size: 1.5rem;
+}
+ span {
+    color: goldenrod;
+}
+.footer-txt a { 
+    color: rgb(212, 211, 211);
+    text-decoration: none;
+}
+.footer-txt a:hover {
+    color: goldenrod;
+    text-decoration: underline;
+ }
+.img-3 {
+    width: 30%;
+    padding:80px;
+    display: grid;
+    grid-template-columns:repeat(3,1fr);
+    grid-row: 1;
+    gap: .5rem;
+    align-items: center;
+    /* background-color: red; */
+}
+.footer-image {
+    width: 100px;
+    height: 100px;
+    padding: 10px;
+    /* background-color: yellow; */
+}
+.footer-image img {
+    object-fit: cover;
+    width: 120px;
+    height: 120px;
+}
+/* .footer-icontop a {
+    background-color: red;
+    display:inline-flex;
+    justify-content: center;
+    align-items:center;
+    padding: .8rem;
+    background: red;
+    color:black;
+    font-size: 30px;
+    margin-left:93%;
+    margin-bottom: 2%;
+    border-radius: 50%;
+    border: 4px solid var(--main-color);
+} */
+.marquee{
+    padding: 5px 0;
+    font-size: 20px;
+    background-color:#433c2e;
+    color: rgb(212, 211, 211);
+    border-top: 1px solid rgb(136, 135, 135);
 }
