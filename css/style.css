@@ -13,10 +13,33 @@ header {
     background: transparent;
 }
 
+.burger {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+    margin-left: 20px;
+    z-index: 1001;
+    /* Tambahkan z-index agar berada di atas elemen lain */
+}
+
+.burger div {
+    width: 25px;
+    height: 3px;
+    background-color: white;
+    margin: 5px;
+    /* Jarak antar garis ditingkatkan dari 4px menjadi 5px */
+    transition: all 0.3s ease;
+}
+
 .navbar {
     display: flex;
     justify-content: space-around;
     align-items: center;
+}
+
+.navbar img {
+    width: 210px;
+    background-size: cover;
 }
 
 ul {
@@ -47,7 +70,7 @@ li>a:hover {
 .bg-home {
     /* width: 100%; */
     height: 100vh;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('https://www.village-bali.com/wp-content/uploads/2024/03/village-drone.jpeg');
+    background-image: linear-gradient(rgba(0, 0, 0, 0.400), rgba(0, 0, 0, 0.400)), url('https://www.village-bali.com/wp-content/uploads/2024/03/village-drone.jpeg');
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -111,16 +134,20 @@ li>a:hover {
 
 .container {
     height: 100vh;
-    display: grid;
-    grid: auto-flow / 1fr 1fr;
+    /* display: grid;
+    grid: auto-flow / 1fr 1fr; */
+    display: flex;
     text-align: center;
 }
 
 .content {
-    margin: 100px;
-    padding: 50px;
+    margin: 50px;
+    padding: 200px;
+    width: 300px;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
     /* background-color: red; */
-    display: grid;
 }
 
 .title-2 {
@@ -132,7 +159,7 @@ li>a:hover {
 #p-2 {
     text-align: justify;
     font-size: 1rem;
-
+    
 }
 
 .image {
@@ -145,8 +172,10 @@ li>a:hover {
 }
 
 #img-2 {
-    width: 45rem;
-    padding: 70px 80px 70px 0;
+    width:40rem;
+    height: 35rem;
+    padding:50px;
+    margin: 50px 150px 50px 50px;
 }
 
 .container-2 {
@@ -164,8 +193,10 @@ li>a:hover {
 
 .card {
     /* background-color: yellow; */
-    width: 400px;
+    width: 350px;
     height: 450px;
+    padding: 10px 20px;
+    margin: 10px 20px;
     padding-top: 20px;
     display: grid;
     gap: 1px;
@@ -198,10 +229,9 @@ li>a:hover {
     padding: 10px 20px;
     margin: 10px 20px;
     text-align: center;
-    /* background-color: red; */
     display: flex;
     justify-content: center;
-    
+
 }
 
 .form-container {
@@ -214,11 +244,12 @@ li>a:hover {
     align-items: center;
     border: 1px solid;
     box-shadow: 10px -10px 10px black;
-    
+
 }
+
 .form-container:hover {
     transition-duration: 1s;
-    transform: scale(1.04,1.04);
+    transform: scale(1.04, 1.04);
 }
 
 .booking-form label {
@@ -248,75 +279,207 @@ li>a:hover {
 .booking-form button:hover {
     background-color: #8e7c56;
 }
+
 .footer {
     height: 400px;
     display: flex;
     justify-content: space-between;
     background-color: #433c2e;
 }
+
 .footer-txt {
     width: 30%;
     margin: 20px;
     padding: 30px;
     color: rgb(212, 211, 211);
     font-family: normal;
-    text-align:justify;
+    text-align: justify;
 }
+
 .footer-txt h2 {
     padding: 10px;
     margin: 10px 0;
     font-size: 1.5rem;
 }
- span {
+
+span {
     color: goldenrod;
 }
-.footer-txt a { 
+
+.footer-txt a {
     color: rgb(212, 211, 211);
     text-decoration: none;
 }
+
 .footer-txt a:hover {
     color: goldenrod;
     text-decoration: underline;
- }
+}
+
 .img-3 {
     width: 30%;
-    padding:80px;
+    padding: 80px;
     display: grid;
-    grid-template-columns:repeat(3,1fr);
+    grid-template-columns: repeat(3, 1fr);
     grid-row: 1;
     gap: .5rem;
     align-items: center;
     /* background-color: red; */
 }
+
 .footer-image {
     width: 100px;
     height: 100px;
     padding: 10px;
     /* background-color: yellow; */
 }
+
 .footer-image img {
     object-fit: cover;
     width: 120px;
     height: 120px;
 }
-/* .footer-icontop a {
-    background-color: red;
-    display:inline-flex;
-    justify-content: center;
-    align-items:center;
-    padding: .8rem;
-    background: red;
-    color:black;
-    font-size: 30px;
-    margin-left:93%;
-    margin-bottom: 2%;
-    border-radius: 50%;
-    border: 4px solid var(--main-color);
-} */
-.marquee{
+.marquee {
     padding: 5px 0;
     font-size: 20px;
-    background-color:#433c2e;
+    background-color: #433c2e;
     color: rgb(212, 211, 211);
     border-top: 1px solid rgb(136, 135, 135);
+}
+
+/* BREAKOINT */
+
+@media (max-width:768px) {
+    
+    /* =====navbar===== */
+    .navbar {
+        padding: 0;
+        margin: 0;
+        max-width: 768px;
+        justify-content: space-between;
+        overflow-x:hidden;
+    }
+
+    .burger {
+        display: flex;
+        flex-direction: column;
+        cursor: pointer;
+        margin: 10px;
+        /* Sesuaikan margin sesuai dengan kebutuhan */
+        top: 5px;
+        /* Atur posisi dari atas */
+        right: 10px;
+    }
+
+    .burger div {
+        width: 25px;
+        /* Sesuaikan lebar ikon */
+        height: 2px;
+        /* Sesuaikan tinggi ikon */
+        background-color: white;
+        margin: 5px;
+        transition: all 0.3s ease;
+    }
+
+    header ul {
+        position: absolute;
+        top: 65px;
+        right: 0;
+        width: 100%;
+        height: 90vh;
+        background-color: rgba(0, 0, 0, 0.7);
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        transform: translateX(100%);
+        transition: transform 0.3s ease-in;
+    }
+    
+    header ul.show {
+        transform: translateX(0);
+    }
+
+    header ul li {
+        margin: 20px 0;
+    }
+
+    header ul li a {
+        font-size: 20px;
+    }
+
+    /* ===== navbar end ===== */
+    /* ===== section content 1 ====== */
+    .container {
+        height: auto;
+        padding: auto;
+        /* display: grid;
+        grid: auto-flow /1fr; */
+        display: flex;
+        flex-direction: column;
+        
+    }
+    
+    .content {
+        margin: auto;
+        padding: 30px 15px;
+        align-items: start;
+    }
+    .title-2 {
+        font-size: 1.5rem;
+    }
+    .paraghraf {
+        padding: 0;
+        font-size: .8rem;
+    }
+    #img-1 {
+        width: 95%;
+    }
+    #img-2 {
+        align-items: start;
+        width: 55%;
+        height: auto;
+    }
+
+    /* ===== section content 1 end ====== */
+    /* ===== section content 2  ====== */
+    .container-2 {
+        padding: 0;
+        height: auto;
+        align-items: center;
+    }
+    .content-2 {
+        flex-direction: column;
+        margin: 0;
+    }
+    .card {
+        width: auto;
+    }
+    .image .link-2 .description {
+        padding: 0;
+        margin: 0;
+    }
+    .card #img-1 {
+        width: 90%;
+    }
+    
+    /* ===== section content 2 end ====== */
+    .footer {
+        height: auto;
+        display: flex;
+        flex-direction: column;
+    }
+    .footer-txt{
+        width: auto;
+    }
+    .img-3 {
+        width: auto;
+        grid-template-columns: repeat(2, 1fr);
+        /* background-color: red; */
+        margin: 0;
+        padding: 50px;
+    }
+    .footer-image {
+        width: auto;
+        align-items: center;
+    }
 }
