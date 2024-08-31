@@ -70,15 +70,26 @@ li>a:hover {
 .bg-home {
     /* width: 100%; */
     height: 100vh;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.400), rgba(0, 0, 0, 0.400)), url('https://www.village-bali.com/wp-content/uploads/2024/03/village-drone.jpeg');
+    /* background-image: linear-gradient(rgba(0, 0, 0, 0.400), rgba(0, 0, 0, 0.400)), url('https://www.village-bali.com/wp-content/uploads/2024/03/village-drone.jpeg');
     background-size: cover;
     background-repeat: no-repeat;
-    background-position: center;
+    background-position: center; */
     color: white;
     display: flex;
     justify-content: center;
     align-items: center;
 }
+.bg-home #background-video {
+    position: absolute;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    filter:brightness(60%);
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height:100%;
+    z-index:-1; }
 
 .home {
     text-align: center;
@@ -380,7 +391,7 @@ span {
     }
 
     ul {
-        position: fixed;
+        position:fixed;
         top: 65px;
         right: 0;
         width: 100%;
@@ -406,6 +417,11 @@ span {
     }
 
     /* ===== navbar end ===== */
+    /* ===== home section ===== */
+    .bg-home {
+        padding: 20px;
+    }
+    /* ===== home section end ===== */
     /* ===== section content 1 ====== */
     .container {
         height: auto;
