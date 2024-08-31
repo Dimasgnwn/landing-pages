@@ -365,9 +365,7 @@ span {
         flex-direction: column;
         cursor: pointer;
         margin: 10px;
-        /* Sesuaikan margin sesuai dengan kebutuhan */
         top: 5px;
-        /* Atur posisi dari atas */
         right: 10px;
     }
 
@@ -381,8 +379,8 @@ span {
         transition: all 0.3s ease;
     }
 
-    header ul {
-        position: absolute;
+    ul {
+        position: fixed;
         top: 65px;
         right: 0;
         width: 100%;
